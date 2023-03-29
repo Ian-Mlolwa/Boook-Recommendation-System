@@ -1,7 +1,6 @@
 import pickle
 import streamlit as st
 import numpy as np
-import seaborn as sns
 
 # Launching the header of the locallhost
 st.header("Book Recommender System Using Association Rule Mining")
