@@ -49,7 +49,6 @@ selected_books = st.selectbox(
     "Type or Select a book",
     book_name
 )
-rules.plot.scatter(x='lift', y='confidence')
 if st.button("Show Recommendation"):
     
     books, poster_url = recommend_book(selected_books)
