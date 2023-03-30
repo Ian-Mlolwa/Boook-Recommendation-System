@@ -6,10 +6,10 @@ import numpy as np
 st.header("Book Recommender System Using Association Rule Mining")
 
 # importing asll the pickle model files
-rules = pickle.load(open('artifacts/rules.pkl', 'rb'))
-book_name = pickle.load(open('artifacts/unique_books.pkl', 'rb'))
-final_rating = pickle.load(open('artifacts/final_rating.pkl', 'rb'))
-basket_sets = pickle.load(open('artifacts/basket_sets.pkl', 'rb'))
+rules = pickle.load(open('rules.pkl', 'rb'))
+book_name = pickle.load(open('unique_books.pkl', 'rb'))
+final_rating = pickle.load(open('final_rating.pkl', 'rb'))
+basket_sets = pickle.load(open('basket_sets.pkl', 'rb'))
 
 def fetch_poster(my_recommendations):
     books_name = []
