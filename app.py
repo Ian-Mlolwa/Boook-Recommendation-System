@@ -105,7 +105,7 @@ if authenticate(username, password):
 
         return all_recommendations, poster_url#, book_links
 
-    
+    api_key = "AIzaSyBasCskG9px7yM4RsCsPC5TFbRbpQJEiTA"
     def fetch_links(all_recommendations, api_key):
         book_links = []
         
