@@ -79,7 +79,7 @@ if authenticate(username, password):
 
         return poster_url
 
-    def recommend_books(book_name):
+    def recommend_books(book_name, api_key):
         # Get the association rule recommendations
         my_recommendations = set([book_name])
 
