@@ -3,6 +3,7 @@ import pickle
 import numpy as np
 import sqlite3
 import seaborn as sns
+import requests
 
 # Create a connection to the SQLite database
 conn = sqlite3.connect("users.db")
@@ -60,10 +61,6 @@ if authenticate(username, password):
     rules = pickle.load(open('artifacts/rules.pkl', 'rb'))
 
 
-    import requests
-
-    api_key = "AIzaSyBasCskG9px7yM4RsCsPC5TFbRbpQJEiTA"
-
     def fetch_poster(my_recommendations):
         books_name = []
         poster_url = []
@@ -82,7 +79,7 @@ if authenticate(username, password):
 
         return poster_url
 
-    def recommend_books(book_name, api_key):
+    def recommend_books(book_name):
         # Get the association rule recommendations
         my_recommendations = set([book_name])
 
@@ -108,7 +105,7 @@ if authenticate(username, password):
 
         return all_recommendations, poster_url#, book_links
 
-
+    
     def fetch_links(all_recommendations, api_key):
         book_links = []
         
