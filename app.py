@@ -4,6 +4,7 @@ import numpy as np
 import sqlite3
 import seaborn as sns
 import requests
+import pandas
 
 # Create a connection to the SQLite database
 conn = sqlite3.connect("users.db")
