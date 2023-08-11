@@ -1,2 +1,3 @@
 Book_Recommender-System-Using-Machine-Learning-Apriori
-![Bookrecommender](https://github.com/Ian-Mlolwa/Ian-Mlolwa/assets/75843266/9b299388-024c-41ce-b6a9-4ef322c670df)
+
+![recommender](https://github.com/Ian-Mlolwa/Boook-Recommendation-System/assets/75843266/c6919e76-fad6-4516-82c0-21e10abc1e62)
